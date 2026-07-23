@@ -1,0 +1,11 @@
+# Databricks Apps entrypoint.
+#
+# The static assets in ./dist are produced by `npm run build`.
+# Databricks Apps injects the port via $DATABRICKS_APP_PORT; server.js binds to it.
+#
+# The backend URL is configured either:
+#   - at build time via .env (VITE_BACKEND_URL), or
+#   - at runtime from the UI's "Backend URL" field (stored in the browser).
+command:
+  - "node"
+  - "server.js"
