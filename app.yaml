@@ -9,3 +9,6 @@
 command:
   - "node"
   - "server.js"
+env:
+  - name: VITE_BACKEND_URL
+    value: "https://my-fastapi-backend-7474652854490729.aws.databricksapps.com"
